@@ -1,10 +1,12 @@
 ---
 interface Props {
-    title?: string,
-    price: number
+    title: string,
+    price: number,
+    variant?: string,
+    season: boolean
 }
 
-const {title = "Paper bags with print", price} = Astro.props;
+const {title, variant = "", price, season} = Astro.props;
 ---
 
 <figure>
@@ -20,10 +22,10 @@ const {title = "Paper bags with print", price} = Astro.props;
         <h3 class="text-sm text-negroni-500">
           <a href="#">
             <span aria-hidden="true" class="absolute inset-0"></span>
-            {title}
+            {variant} {season === true ? "(Seasonal Item)" : ""}
           </a>
         </h3>
-        <p class="mt-1 text-lg font-medium leading-6 text-white">Beige</p>
+        <p class="mt-1 text-lg font-medium leading-6 text-white">{title}</p>
       </div>
       <p class="text-base text-tomato-500">${price}</p>
     </div>
