@@ -2,6 +2,7 @@ type ItemCommon = {
     itemName: string
     price: number
     season: boolean
+    available?: boolean
 }
 
 type Drink = {
@@ -15,9 +16,10 @@ type Lemonade = {
 }
 
 
-type Latte = Drink & {
-    flag: "Latte"
-    variant: "Chai" | "Matcha" | string
+type Latte = {
+    type: "Latte"
+    temp: "Hot" | "Iced"
+    variant?: "Chai" | "Matcha" | string 
 }
 
 type Milkshake = {
