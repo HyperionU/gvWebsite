@@ -1,0 +1,27 @@
+---
+import Coffee from "../icons/Coffee.astro";
+import GitHub from "../icons/GitHub.astro";
+import CodePen from "../icons/CodePen.astro";
+---
+
+<nav class="flex w-full border-b-2 text-negroni-500 divide-x font-medium">
+    <div class="flex items-center justify-start p-8 gap-4 text-3xl basis-1/3">
+        <a href="/" aria-label="Global Village - Home" class="hover:text-tomato-500 transition-colors">
+            <Coffee />
+        </a>
+    </div>
+    <div class="flex items-center justify-center p-8 gap-12 text-3xl basis-1/3">
+        Global Village Cafe
+    </div>
+    <div class="flex items-center justify-center p-8 gap-12 grow">
+        <a href="https://github.com/HyperionU" target="_blank" aria-label="HyperionU - Github">
+            <GitHub />
+        </a>
+        <a href="https://codepen.io/korvid" target="_blank" aria-label="HyperionU - Codepen">
+            <CodePen />
+        </a>
+    </div>
+    <div class="flex items-center justify-start p-8 gap-4 grow">
+        Contact
+    </div>
+</nav>
