@@ -1,10 +1,10 @@
 import eslintPluginAstro from 'eslint-plugin-astro';
-import base from "@repo/eslint-config"
+import { config } from '@repo/eslint-config/base';
 export default [
   // add more generic rule sets here, such as:
   // js.configs.recommended,
   ...eslintPluginAstro.configs.recommended,
-  base,
+  config,
   {
     rules: {
       // override/add rules settings here, such as:
