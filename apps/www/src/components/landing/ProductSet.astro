@@ -1,0 +1,30 @@
+---
+import { Item } from "@globalville/types";
+import Product from "@/components/Product.astro";
+
+interface Props {
+    menuSet: Item[]
+    title: string
+}
+
+const {menuSet, title} = Astro.props
+---
+
+<h2 class="text-negroni-500 font-bold md:text-4xl text-2xl tracking-tight text-center">{title}</h2>
+<div class="relative mx-auto px-8 max-w-7xl py-12   md:px-12">
+    <div
+      class="grid grid-cols-1 gap-6 lg:gap-y-16 md:grid-cols-2 lg:grid-cols-3">
+      {menuSet.map((value) => {
+        switch (value.type) {
+          case "Food":
+            return (<Product title={value.itemName} price={value.price} variant={value.variant} season={value.season} />);
+          case "Add-on":
+            return (<Product title={value.itemName} price={value.price} variant={null} season={value.season} />);
+          case "Milkshake":
+            return (<Product title={value.itemName} price={value.price} variant={value.variant} season={value.season} />);
+          default:
+            return (<Product title={value.itemName} price={value.price} variant={value.temp} season={value.season} />);
+        }
+      })}
+</div>
+</div>

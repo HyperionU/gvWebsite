@@ -1,0 +1,23 @@
+{
+  "name": "@globalville/website",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "devDependencies": {
+    "@astrojs/sitemap": "^3.2.1",
+    "@globalville/types": "workspace:*",
+    "@iconify-json/lucide": "1.2.23",
+    "@tailwindcss/vite": "^4.0.0-beta.9",
+    "astro": "^5.1.6",
+    "astro-icon": "1.1.5",
+    "tailwindcss": "^4.0.0-beta.9"
+  },
+  "dependencies": {
+    "@astrojs/vercel": "^8.0.2"
+  }
+}
