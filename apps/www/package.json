@@ -15,7 +15,11 @@
     "@tailwindcss/vite": "^4.0.0-beta.9",
     "astro": "^5.1.6",
     "astro-icon": "1.1.5",
-    "tailwindcss": "^4.0.0-beta.9"
+    "tailwindcss": "^4.0.0-beta.9",
+    "eslint": "9.18.0",
+    "eslint-plugin-astro": "1.3.1",
+    "@typescript-eslint/parser": "8.20.0",
+    "@repo/eslint-config": "workspace:*"
   },
   "dependencies": {
     "@astrojs/vercel": "^8.0.2"
