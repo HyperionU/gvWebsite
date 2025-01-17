@@ -6,7 +6,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  // Add your domain here
-   site: 'https://lexingtonthemes.com',
-  integrations: [ sitemap()]
+  integrations: [sitemap()]
 });
