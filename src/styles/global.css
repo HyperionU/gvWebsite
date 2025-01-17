@@ -1,4 +1,15 @@
 @import "tailwindcss";
+
+@variant gold (&:where([data-theme="gold"] *));
+@variant black (&:where([data-theme="black"] *));
+@variant red (&:where([data-theme="red"] *));
+@variant orange (&:where([data-theme="orange"] *));
+@variant blue (&:where([data-theme="blue"] *));
+@variant purple (&:where([data-theme="purple"] *));
+@variant sand (&:where([data-theme="sand"] *));
+@variant yellow (&:where([data-theme="yellow"] *));
+@variant silver (&:where([data-theme="silver"] *));
+
 @theme {
 
   /* Charcoal  */
@@ -36,6 +47,18 @@
   --color-negroni-700: #c1782f;
   --color-negroni-800: #7f4f1f;
   --color-negroni-900: #422910;
+
+  /* Dyed colours */
+  --color-dyed-gold: #edc068;
+  --color-dyed-black: #242223;
+  --color-dyed-red: #b22c2b;
+  --color-dyed-orange: #f06521;
+  --color-dyed-blue: #4295bb;
+  --color-dyed-purple: #694f73;
+  --color-dyed-sand: #efd2a6;
+  --color-dyed-yellow: #fdc109;
+  --color-dyed-silver: #949599;
+
 }
 /* CSS */
 :root {
@@ -46,4 +69,44 @@
   :root {
     font-family: InterVariable, sans-serif;
   }
+}
+
+body {
+  background-color: var(--color-charcoal-500);
+}
+
+body[data-theme="gold"]{
+  background-color: var(--color-dyed-gold);
+}
+
+body[data-theme="black"]{
+  background-color: var(--color-dyed-black);
+}
+
+body[data-theme="red"]{
+  background-color: var(--color-dyed-red);
+}
+
+body[data-theme="orange"]{
+  background-color: var(--color-dyed-orange);
+}
+
+body[data-theme="blue"]{
+  background-color: var(--color-dyed-blue);
+}
+
+body[data-theme="purple"]{
+  background-color: var(--color-dyed-purple);
+}
+
+body[data-theme="sand"]{
+  background-color: var(--color-dyed-sand);
+}
+
+body[data-theme="yellow"]{
+  background-color: var(--color-dyed-yellow);
+}
+
+body[data-theme="silver"]{
+  background-color: var(--color-dyed-silver);
 }

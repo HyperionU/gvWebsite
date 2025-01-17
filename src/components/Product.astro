@@ -19,14 +19,14 @@ const {title, variant = "", price, season} = Astro.props;
     />
     <div class="mt-4 flex justify-between px-6">
       <div>
-        <h3 class="text-sm text-negroni-500">
+        <h3 class="text-sm text-negroni-500 gold:text-negroni-900">
           <a href="#">
             <span aria-hidden="true" class="absolute inset-0"></span>
             {variant} {season === true ? "(Seasonal Item)" : ""}
           </a>
         </h3>
-        <p class="mt-1 text-lg font-medium leading-6 text-white">{title}</p>
+        <p class="mt-1 text-lg font-medium leading-6 text-white gold:text-dyed-black">{title}</p>
       </div>
-      <p class="text-base text-tomato-500">${price}</p>
+      <p class="text-base text-tomato-500 red:text-tomato-100">${price}</p>
     </div>
 </figure>
