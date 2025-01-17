@@ -1,3 +1,5 @@
+import { Prettify } from "./utils"
+
 type ItemCommon = {
     itemName: string
     price: number
