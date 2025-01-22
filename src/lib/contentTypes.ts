@@ -51,3 +51,5 @@ type Bagel = {
 type ItemProps = ItemCommon & (Drink | Lemonade | Latte | Bagel | AddOn | Milkshake)
 
 export type Item = Prettify<ItemProps>
+
+export type Theme = "default" | "gold" | "black" | "red" | "orange" | "blue" | "purple" | "sand" | "yellow" | "silver"

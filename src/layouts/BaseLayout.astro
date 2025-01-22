@@ -3,12 +3,32 @@ import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/global/Footer.astro";
 ---
 
+<script is:inline>
+	const getThemePreference = () => {
+		if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+			return localStorage.getItem('theme');
+		}
+		return document.querySelector("body").dataset.theme
+	};
+
+  const Theme = getThemePreference();
+  document.querySelector("body").dataset.theme = Theme
+
+	if (typeof localStorage !== 'undefined') {
+		const observer = new MutationObserver(() => {
+			const theme = document.querySelector("body").dataset.theme
+			localStorage.setItem('theme', theme);
+		});
+		observer.observe(document.querySelector("body"), { attributes: true });
+	}
+</script>
+
 <html lang="en">
   <head>
     <BaseHead />
   </head>
 
-  <body data-theme="">
+  <body data-theme="default">
     <slot />
 <Footer/>
   </body>

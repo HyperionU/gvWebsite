@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "tailwindcss-animate";
 
 @variant gold (&:where([data-theme="gold"] *));
 @variant black (&:where([data-theme="black"] *));
@@ -11,6 +12,10 @@
 @variant silver (&:where([data-theme="silver"] *));
 
 @theme {
+
+  --color-popover: var(--color-charcoal-500);
+  --color-popover-foreground: var(--color-negroni-500);
+  --color-border: hsl(216 34% 17%);
 
   /* Charcoal  */
   --color-charcoal-50: #eceeec;
@@ -72,11 +77,11 @@
 }
 
 body {
-  background-color: var(--color-charcoal-500);
+  @apply bg-charcoal-500
 }
 
 body[data-theme="gold"]{
-  background-color: var(--color-dyed-gold);
+  @apply bg-dyed-gold
 }
 
 body[data-theme="black"]{
