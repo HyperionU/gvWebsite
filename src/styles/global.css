@@ -115,3 +115,7 @@ body[data-theme="yellow"]{
 body[data-theme="silver"]{
   background-color: var(--color-dyed-silver);
 }
+
+h1, h2, h3, h4 {
+  @apply text-negroni-500 gold:text-negroni-900 red:text-negroni-50 orange:text-dyed-black blue:text-dyed-black purple:text-negroni-200 sand:text-dyed-black yellow:text-dyed-black silver:text-dyed-black
+}
