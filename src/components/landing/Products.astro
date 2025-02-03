@@ -19,7 +19,7 @@ seasonalMenu.filter((item, index) => {if (!item.available) {seasonalMenu.splice(
 ---
 
 <main >
-  <ProductSet menuSet={seasonalMenu} title="Seasonal" />
+  <!--<ProductSet menuSet={seasonalMenu} title="Seasonal" />-->
   <ProductSet menuSet={menu.filter((item) => menuFilter(item, "Drink"))} title="Drinks" />  
   <ProductSet menuSet={menu.filter((item) => menuFilter(item, "Milkshake"))} title="Milkshakes" />
   <ProductSet menuSet={menu.filter((item) => menuFilter(item, "Latte"))} title="Lattes" />  

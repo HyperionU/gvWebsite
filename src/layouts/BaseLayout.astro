@@ -8,18 +8,15 @@ import Footer from "../components/global/Footer.astro";
 		if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
 			return localStorage.getItem('theme');
 		}
-		return document.querySelector("body").dataset.theme
+		return document.body.dataset.theme
 	};
-
-  const Theme = getThemePreference();
-  document.querySelector("body").dataset.theme = Theme
 
 	if (typeof localStorage !== 'undefined') {
 		const observer = new MutationObserver(() => {
-			const theme = document.querySelector("body").dataset.theme
+			const theme = getThemePreference()
 			localStorage.setItem('theme', theme);
 		});
-		observer.observe(document.querySelector("body"), { attributes: true });
+		observer.observe(document.body, { attributes: true });
 	}
 </script>
 

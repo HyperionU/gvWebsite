@@ -25,8 +25,8 @@ const {title, variant = "", price, season} = Astro.props;
             {variant} {season === true ? "(Seasonal Item)" : ""}
           </a>
         </h3>
-        <p class="mt-1 text-lg font-medium leading-6 text-white gold:text-dyed-black">{title}</p>
+        <p class="mt-1 text-lg font-medium leading-6 text-white gold:text-dyed-black sand:text-dyed-black">{title}</p>
       </div>
-      <p class="text-base text-tomato-500 red:text-tomato-100 orange:text-tomato-900 blue:text-tomato-900">${price}</p>
+      <p class="text-base text-tomato-500 red:text-tomato-100 orange:text-tomato-900 blue:text-tomato-900 purple:text-tomato-100">${price}</p>
     </div>
 </figure>

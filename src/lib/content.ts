@@ -12,7 +12,7 @@ const drinks: Item[] =
     {itemName: "Refreshers", type: "Drink", price: 2.25, season: false, temp: "Iced"},
     {itemName: "Iced Brown Sugar Oat Shaken Espresso", type: "Drink", price: 4.25, season: false, temp: "Iced"},
     {itemName: "Hot Chocolate", type: "Drink", price: 3.75, season: false, temp: "Hot"},
-    {itemName: "Peppermint Hot Chocolate", type: "Drink", price: 4.50, season: true, temp: "Hot", available: true},
+    //{itemName: "Peppermint Hot Chocolate", type: "Drink", price: 4.50, season: true, temp: "Hot", available: false},
     {itemName: "London Fog", type: "Drink", price: 4.25, season: false, temp: "Hot"},
     {itemName: "Mocha", type: "Drink", price: 4.25, season: false, temp: "Hot"},
     {itemName: "Caramel Macchiato", type: "Drink", price: 4.25, season: false, temp: "Hot"}
@@ -26,8 +26,8 @@ const lattes: Item[] =
     {itemName: "Iced Chai Latte", type: "Latte", price: 4.25, season: false, temp: "Iced", variant: "Chai"},
     {itemName: "Matcha Latte", type: "Latte", price: 4.25, season: false, temp: "Hot", variant: "Matcha"},
     {itemName: "Iced Matcha Latte", type: "Latte", price: 4.25, season: false, temp: "Iced", variant: "Matcha"},
-    {itemName: "Peppermint Latte", type: "Latte", price: 4.25, season: true, temp: "Hot", variant: "Peppermint", available: true},
-    {itemName: "Iced Peppermint Latte", type: "Latte", price: 4.25, season: true, temp: "Iced", variant: "Peppermint", available: true},
+    //{itemName: "Peppermint Latte", type: "Latte", price: 4.25, season: true, temp: "Hot", variant: "Peppermint", available: false},
+    //{itemName: "Iced Peppermint Latte", type: "Latte", price: 4.25, season: true, temp: "Iced", variant: "Peppermint", available: false},
 ]
 
 const milkshakes: Item[] = 
@@ -37,7 +37,7 @@ const milkshakes: Item[] =
     {itemName: "Cookies and Cream Milkshake", type: "Milkshake", price: 4.75, season: false, variant: "Specialty", flavour: "Cookies & Cream"},
     {itemName: "Chai Milkshake", type: "Milkshake", price: 4.75, season: false, variant: "Specialty", flavour: "Chai"},
     {itemName: "Matcha Milkshake", type: "Milkshake", price: 4.75, season: false, variant: "Specialty", flavour: "Matcha"},
-    {itemName: "Peppermint Milkshake", type: "Milkshake", price: 4.75, season: true, variant: "Specialty", flavour: "Peppermint", available: true},
+    {itemName: "Peppermint Milkshake", type: "Milkshake", price: 4.75, season: true, variant: "Specialty", flavour: "Peppermint", available: false},
 ]
 
 const bagels: Item[] = 
@@ -60,8 +60,8 @@ const flavourShots: Item[] =
     {itemName: "+ Vanilla", type: "Add-on", price: 0.25, season: false, variant: "Flavour", flavour: "Vanilla"},
     {itemName: "+ Caramel", type: "Add-on", price: 0.25, season: false, variant: "Flavour", flavour: "Caramel"},
     {itemName: "+ Mango", type: "Add-on", price: 0.25, season: false, variant: "Flavour", flavour: "Mango"},
-    {itemName: "+ Lavender", type: "Add-on", price: 0.25, season: true, variant: "Flavour", flavour: "Lavender", available: false},
-    {itemName: "+ Peppermint", type: "Add-on", price: 0.25, season: true, variant: "Flavour", flavour: "Peppermint", available: true},
+    //{itemName: "+ Lavender", type: "Add-on", price: 0.25, season: true, variant: "Flavour", flavour: "Lavender", available: false},
+    //{itemName: "+ Peppermint", type: "Add-on", price: 0.25, season: true, variant: "Flavour", flavour: "Peppermint", available: false},
 ]
 
 export {milkshakes, drinks, lattes, addOn, bagels, flavourShots}

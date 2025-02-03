@@ -17,8 +17,8 @@ export function ModeToggle() {
   >("default")
 
   useEffect(() => {
-    const body = document.querySelector("body")
-    body.dataset.theme = theme
+    document.body.dataset.theme = theme
+    localStorage.setItem("theme", theme)
   }, [theme])
 
   return (
