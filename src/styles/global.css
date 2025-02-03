@@ -1,15 +1,15 @@
 @import "tailwindcss";
 @plugin "tailwindcss-animate";
 
-@variant gold (&:where([data-theme="gold"] *));
-@variant black (&:where([data-theme="black"] *));
-@variant red (&:where([data-theme="red"] *));
-@variant orange (&:where([data-theme="orange"] *));
-@variant blue (&:where([data-theme="blue"] *));
-@variant purple (&:where([data-theme="purple"] *));
-@variant sand (&:where([data-theme="sand"] *));
-@variant yellow (&:where([data-theme="yellow"] *));
-@variant silver (&:where([data-theme="silver"] *));
+@custom-variant gold (&:where([data-theme="gold"] *));
+@custom-variant black (&:where([data-theme="black"] *));
+@custom-variant red (&:where([data-theme="red"] *));
+@custom-variant orange (&:where([data-theme="orange"] *));
+@custom-variant blue (&:where([data-theme="blue"] *));
+@custom-variant purple (&:where([data-theme="purple"] *));
+@custom-variant sand (&:where([data-theme="sand"] *));
+@custom-variant yellow (&:where([data-theme="yellow"] *));
+@custom-variant silver (&:where([data-theme="silver"] *));
 
 @theme {
 
